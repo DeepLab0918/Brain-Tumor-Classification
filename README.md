@@ -18,7 +18,8 @@ This project focuses on classifying brain tumors using a semantic segmentation m
 The dataset used for this project consists of MRI brain scan images with annotated tumor regions.
 
 ➤ Dataset Details:
-Source: 
+
+Source: https://drive.google.com/file/d/1kccavhwX-AqyplYyul-9z2KOI7NrlBBS/view?usp=drive_link (Download the dataset from this link)
 
 Classes:
 
@@ -31,3 +32,39 @@ Meningioma
 Pituitary Tumor
 
 Format: JPEG/PNG MRI images with corresponding segmentation masks (for supervised training)
+
+➤ Structure (example):
+
+Dataset/
+
+├── Train/
+
+│   ├── Images/
+
+│   └── Masks/
+
+├── Test/
+
+│   ├── Images/
+
+│   └── Masks/
+
+✅ Requirements
+
+Install dependencies using:
+
+pip install tensorflow matplotlib numpy opencv-python scikit-learn
+
+🚀 How to Run
+
+Clone the repository:
+
+git clone https://github.com/yourusername/brain-tumor-classification.git
+cd brain-tumor-classification
+
+Place the dataset in the Dataset/ directory as described above.
+
+Open Brain Tumor Classification.ipynb in Jupyter Notebook or Colab.
+
+Run all cells to train and evaluate the model.
+
